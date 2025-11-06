@@ -1,13 +1,14 @@
-from math import sqrt
+from math import ceil
 
 #### Fonction secondaire
 
 
 def isprime(p):
 
-    # votre code ici
-
-    pass
+    for i in range(2, int(p ** 0.5) + 1) :
+        if (p % i == 0) :
+            return False
+    return True
 
 #### Fonction principale
 
