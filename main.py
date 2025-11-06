@@ -4,7 +4,8 @@ from math import ceil
 
 
 def isprime(p):
-
+    if (p <= 1) :
+        return False
     for i in range(2, int(p ** 0.5) + 1) :
         if (p % i == 0) :
             return False
